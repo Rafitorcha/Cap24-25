@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Engine to Way</title>
+   
+   <link rel="stylesheet" type="text/css" href="librery/Jsxgraph.css" />
+   <link rel="stylesheet" type="text/css" href="librery/boostrap.css" />
+   <link rel="stylesheet" type="text/css" href="librery/style.css" />
+   <link rel="stylesheet" href="styles.css">
+   <script type="text/javascript" src="librery/jsxgraph.js"></script>
+   <script type="text/javascript" src="librery/jquery-3.5.1.min.js"></script>
+   <script id="MathJax-script" async src="librery/mathAjax_2.js">  </script>
+
+   <link rel="icon" type="image/x-icon" href="math-icon2.png">
+
+</head>
+
+<body>
+
+   <nav class="mb-5 border-bottom border-dark">
+      <div class="d-flex justify-content-between">
+         <p class="navbar-brand font-italic text-break" id="titleA">Estudio de Curvas</p>
+      </div>
+   </nav>
+  
+
+<p><strong>Ponga los nombres que faltan:</strong> los de los puntos iniciales o finales de la curva.</p>
+<div class="etwAllArtifact">      
+   <div class="elementEtw" data-board="board_0"></div>
+   <div class="elementEtw" data-board="board_1"></div>
+  
+   <div class="elementEtw" data-board="board_0"></div>
+   <!-- 
+     <div class="elementEtw" data-board="board_0"></div>
+   <div class="elementEtw" data-board="board_0"></div>
+   <div class="elementEtw" data-board="board_0"></div>
+   
+   <div class="elementEtw" data-board="board_6"></div>
+   <div class="elementEtw" data-board="board_7"></div> -->
+</div>
+
+<!-- Inicio template -->
+
+<template id="tmp-way">
+      
+   <div id="artifact-" class="etwArtifact">
+
+     <div class="etwArtifact__title"></div>
+      <div class="etwArtifact__Board  etwBoard jxgbox" data-board="board_" data-artifact="artifact_">
+      </div>
+
+      
+      
+      <div class="etwArtifact__elements">
+      </div>
+         
+      <div class="etwArtifact__btnContainer btn-all">
+            <div >
+               <button class="  help-btn button-marg buttonSecundary buttonKey d-none"></button>
+               <button class=" reset button-marg buttonSecundary buttonKey"></button> 
+               <button class=" etwArtifact__btnValidate check button-marg buttonPrimary buttonKey"></button>
+            </div>
+      </div>
+      
+   </div>
+
+</template>
+<!-- fin  template -->
+
+
+  <!--  <script  src="https://unpkg.com/mathlive"></script> -->
+   <script src="../librery/mathmin.js"></script>
+   <script src="../engines/mathKeyboard.js"></script>
+   <script src="../engines/mod_G.js"></script>
+   <script src="../engines/engineToWay.js"></script>
+   <script src="../definitions/pag_1.2.js"></script>
+ 
+   <!--    <script src="librery/MathLive.js"></script> -->
+</body>
+
+</html>
