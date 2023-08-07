@@ -1,0 +1,28 @@
+.Heading{
+	width: 100%;
+	font-weight: bold;
+	color: gray;
+	margin-top: 10px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	margin-right: 30px;
+	color: Gray;
+}
+.subTitle{
+	font-weight: bold;
+	color: black;
+	margin-top: 20px;
+	margin-left: 20px
+}
+.text{
+
+margin-left: 20px;
+font-weight: bold;
+}
+.text2{
+	margin-left: 20px;
+font-weight: bold;
+margin-top: 20px;
+margin-bottom: 20px;
+text-align: justify-all;
+}

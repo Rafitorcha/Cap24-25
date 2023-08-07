@@ -1,0 +1,18 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+ <g id="Layer_1">
+  <title>Layer 1</title>
+  <path id="svg_7" d="m588.05,6.37688l1.00001,-1.30375l1.00001,1.30375l-2.00001,0l-0.00001,0z" stroke-width="6" stroke="#000" fill="none"/>
+  <path fill="none" stroke="#d8565f" stroke-width="6" d="m-447.26001,466.74042l0.76394,0l0.23606,-0.54067l0.23606,0.54067l0.76394,0l-0.61804,0.33415l0.23608,0.54067l-0.61804,-0.33416l-0.61804,0.33416l0.23608,-0.54067l-0.61804,-0.33415z" id="svg_11"/>
+  <path fill="none" stroke="#d8565f" stroke-width="6" opacity="NaN" id="svg_14"/>
+  <line stroke-width="5" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_1" y2="353" x2="188" y1="26" x1="190" stroke="#000" fill="none"/>
+  <line transform="rotate(0.156545 202.5 198)" stroke="#000" stroke-width="5" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_3" y2="199.46584" x2="372.99459" y1="196.53416" x1="32.00542" fill="none"/>
+  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_4" y2="42" x2="477" y1="-69" x1="341" stroke="#000" fill="none"/>
+  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_5" y2="123" x2="426" y1="124" x1="427" stroke="#000" fill="none"/>
+  <path id="svg_6" d="m174.12998,44.30687l17,-23.99999l16.99999,23.99999l-33.99999,0z" stroke-width="5" stroke="#000" fill="#000000"/>
+  <path transform="rotate(90 373.13 198.307)" id="svg_9" d="m356.12998,210.30687l17,-23.99999l16.99999,23.99999l-33.99999,0z" stroke-width="5" stroke="#000" fill="#000000"/>
+  <line id="svg_15" y2="279" x2="-520" y1="279" x1="-521" stroke-width="5" stroke="#d8565f" fill="none"/>
+  <line id="svg_16" y2="71.5" x2="302" y1="197.5" x1="188" stroke-width="5" stroke="#d8565f" fill="none"/>
+  <line id="svg_18" y2="69.5" x2="84" y1="193.5" x1="187" stroke-width="5" stroke="#d8565f" fill="none"/>
+ </g>
+
+</svg>

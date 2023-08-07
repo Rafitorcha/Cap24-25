@@ -1,0 +1,1196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+  box-sizing: none;
+  --keyboard-zindex: 3000;
+  --keyboard-background:#808080;
+  --keyboard-background-border: #ffa500;
+
+}
+
+/* Aqui comienza los iconos es formato unicode de los botones*/
+.check::after {
+  display: inline-block;
+  color: #fff;
+  content: " ✓";
+  font-weight: bolder;
+  font-size: 26px;
+}
+
+.reset::after {
+  color: black;
+  content: "\021bb";
+  font-weight: bolder;
+  font-size: 26px;
+}
+
+.conect::after {
+  color: #d65d06;
+  content: "\2933";
+  font-weight: bolder;
+  font-size: 26px;
+}
+
+.infinite::after {
+  color: #d65d06;
+  content: "\221E";
+  font-weight: bolder;
+  font-size: 26px;
+}
+
+.pointOpen::before {
+  color: #d65d06;
+  content: "○";
+  font-weight: bolder;
+  font-size: 26px;
+}
+
+.pointClose::after {
+  color: #d65d06;
+  content: "●";
+  font-weight: bolder;
+  font-size: 26px;
+}
+
+.mayorEqual::after {
+  color: #646363;
+  content: "\2265";
+  font-weight: bolder;
+  font-size: 26px;
+}
+
+.minorEqual::after {
+  color: #646363;
+  content: "\2264";
+  font-weight: bolder;
+  font-size: 26px;
+}
+
+.mayor::after {
+  color: #646363;
+  content: "\003E";
+  font-weight: bolder;
+  font-size: 26px;
+}
+
+.minor::after {
+  color: #646363;
+  content: "\003C";
+  font-weight: bolder;
+  font-size: 26px;
+}
+
+.equal::after {
+  color: #646363;
+  content: "\003D";
+  font-weight: bolder;
+  font-size: 26px;
+}
+
+.notEqual::after {
+  color: #646363;
+  content: "\2260";
+  font-weight: bolder;
+  font-size: 26px;
+}
+
+.empty::after {
+  color: #646363;
+  content: "\2205";
+  font-weight: bolder;
+  font-size: 26px;
+}
+
+.setOf::after {
+  color: #646363;
+  content: "\22C3";
+  font-weight: bolder;
+  font-size: 26px;
+}
+
+.intersection::after {
+  color: #646363;
+  content: "\22C2";
+  font-weight: bolder;
+  font-size: 26px;
+}
+
+.realNumber::after {
+  color: #646363;
+  content: "\0052";
+  font-weight: bolder;
+  font-size: 26px;
+}
+.parenthesisLeft::after {
+  color: #646363;
+  content: "\0028";
+  font-weight: bolder;
+  font-size: 26px;
+}
+.parenthesisRight::after {
+  color: #646363;
+  content: "\0029";
+  font-weight: bolder;
+  font-size: 26px;
+}
+
+.bracketsLeft::after {
+  color: #646363;
+  content: "\005B";
+  font-weight: bolder;
+  font-size: 26px;
+}
+.bracketsRight::after {
+  color: #646363;
+  content: "\005D";
+  font-weight: bolder;
+  font-size: 26px;
+}
+
+.keysLeft::after {
+  color: #646363;
+  content: "\007B";
+  font-weight: bolder;
+  font-size: 26px;
+}
+.keysRight::after {
+  color: #646363;
+  content: "\007D";
+  font-weight: bolder;
+  font-size: 26px;
+}
+.infiniteWrite::after {
+  color: #646363;
+  content: "\221E";
+  font-weight: bolder;
+  font-size: 26px;
+}
+
+.notExist::after {
+  color: #646363;
+  content: "\2204";
+  font-weight: bolder;
+  font-size: 26px;
+}
+/* Aqui Termina los iconos es formato unicode de los botones*/
+
+/* --------------------------------------------------------------------- */
+/* Inicio de Estilos de los botones primarios, secuandarios y tercearios */
+
+.buttonPrimary {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #006ebb;
+  border: none;
+  border-radius: 0.25rem;
+}
+.buttonSecundary {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #a4abb1;
+  border: none;
+  border-radius: 0.25rem;
+}
+/* #a4abb1 */
+.buttonTertiary {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border: 1px solid #646363;
+  border-radius: 0.25rem;
+}
+
+.buttonAux {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border: 1px solid #e17055;
+  border-radius: 0.25rem;
+}
+
+/* Termina Estilos de los botones primarios, secuandarios y tercearios */
+
+/* Color de los input's en los artefactos del capitulo_0 */
+.colorInput {
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #a569bd;
+  border-radius: 10px;
+  margin: 0;
+  -webkit-border-radius: 10px;
+  -ms-touch-action: none;
+}
+
+/* boards carlos */
+
+.med-board {
+  width: 400px;
+  height: 400px;
+}
+
+.short-board {
+  width: 350px;
+  height: 200px;
+}
+
+.big-board {
+  width: 600px;
+  height: 450px;
+}
+
+.input-zise {
+  width: 45px;
+  border-radius: 10%;
+}
+/*dominio*/
+.domKey::after {
+  position: relative;
+  top: -12px;
+  left: 0px;
+  color: #d65d06;
+  content: "\2508";
+  font-weight: bolder;
+  font-size: 45px;
+}
+.rangKey::after {
+  position: relative;
+  top: -5px;
+  left: 3.5px;
+  color: #d65d06;
+  content: "\2847";
+  font-weight: bolder;
+  font-size: 30px;
+}
+/*cota superior*/
+.coteTop::after {
+  color: #d65d06;
+  content: "\2912";
+  font-weight: bolder;
+  font-size: 26px;
+}
+/*cota inferior*/
+.coteDown::after {
+  color: #d65d06;
+  content: "\2913";
+  font-weight: bolder;
+  font-size: 26px;
+}
+
+/* Contenedor principal en el motor del capitulo 1 paginas 3-6  */
+/* Crea un contenedor flexible y centra sus hijos */
+.content_1 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+/* Contenedor Hijo, toma el ancho de contenedor padre y se coloca a 10px de margen */
+.content_2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px;
+}
+/* Contenedor de para los textos toma el 100% del ancho de su padre
+ y coloca los textos en formato centrado y con lineas separadas de 30px */
+.contenedor {
+  width: 100%;
+  text-align: justify;
+  line-height: 30px;
+}
+/* Clase para los titulos coloca un margen de 10px en los cuatro lados y pone en negrita el texto */
+.subtitulo {
+  margin: 10px;
+  font-weight: bolder;
+}
+/* Clase para los parrafos coloca un margen de 10px en los cuatro lados y el texto lo coloca centrado */
+.parrafo {
+  /* margin-top: 10px; */
+  text-align: justify;
+}
+/* Clase para los parrafos coloca flexible el contenedor y en filas los elementos */
+.textDouble {
+  display: flex;
+  flex-direction: row;
+}
+/* margen de 5px */
+.margen-5 {
+  margin: 5px;
+}
+/* margen de 50px */
+.margen-bottom-50 {
+  margin-bottom: 50px;
+}
+/* margen izquierdo que calcula el ancho de la pantaña y lo resta por el 80% de ella
+y añade el elemento a un poco menos de la mitad de la pantalla, de esta manera se logra un movimiento responsive */
+.margen-left {
+  margin-left: calc(100% - (82%));
+}
+/* Clase para cuando los artefactos se resuelven de manera correcta */
+.pass {
+  background-color: rgba(73, 225, 94, 0.4) !important;
+}
+/* Clase para cuando los artefactos se resuelven de manera incorrecta */
+.failed {
+  background-color: rgba(203, 78, 31, 0.4) !important;
+}
+/* Clase para cuando los artefactos no se les esta evaluando correcto e incorrecto sino su opinion */
+.yellow {
+  background-color: rgba(236, 184, 12, 0.4);
+}
+/* centra el contenido del input, desde el puntero y los value */
+.inputCenter {
+  text-align: center;
+}
+/* Margen entre los botones añade 4px a los cuatro lados del boton*/
+.button-marg {
+  margin: 4px;
+}
+
+.contentBoard_Double {
+  width: 400px;
+}
+.margen-button {
+  margin-bottom: 20px;
+}
+
+.board-item {
+  width: 100px;
+  height: 100px;
+}
+.contenedor::-webkit-scrollbar {
+  width: 8px; /* Tamaño del scroll en vertical */
+  height: 8px; /* Tamaño del scroll en horizontal */
+}
+
+.contenedor::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+.contenedor::-webkit-scrollbar-thumb:hover {
+  background: #b3b3b3;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Cambiamos el fondo cuando esté en active */
+.contenedor::-webkit-scrollbar-thumb:active {
+  background-color: #999999;
+}
+/* Ponemos un color de fondo y redondeamos las esquinas del track */
+.contenedor::-webkit-scrollbar-track {
+  background: #e1e1e1;
+  border-radius: 4px;
+}
+
+/* Cambiamos el fondo cuando esté en active o hover */
+.contenedor::-webkit-scrollbar-track:hover,
+.contenedor::-webkit-scrollbar-track:active {
+  background: #d4d4d4;
+}
+/* Mediaquery para el responsive de los tableros */
+@media only screen and (min-width: 500px) {
+  .table-board {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (min-width: 500px) {
+  .content_1 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  .input-width {
+    width: calc(100% - (60%));
+  }
+}
+
+.input-width {
+  width: calc(100% - (50%));
+}
+.center-td {
+  text-align: center;
+}
+.table-width {
+  width: calc(100% - (40%));
+}
+
+.reduce-table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*////////////////
+agregado boton para las curvas
+centrado de texto
+copia de del borde de la libreria
+agregado estilo de incorrecto y correcto sin opasidad para usarlo en el board
+//////////////*/
+.curve::before {
+  color: #d65d06;
+  content: "\007E";
+  font-weight: bolder;
+  font-size: 30px;
+}
+/* centra el texto, con un tamaño predeterminado y un padding */
+.textCenter {
+  text-align: center;
+  font-size: 12px;
+  padding: 2px;
+}
+
+/*borde negro del board*/
+.border-board-dark {
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #000000;
+  border-radius: 10px;
+  margin: 0;
+  -webkit-border-radius: 10px;
+  -ms-touch-action: none;
+}
+
+.passInLibrary {
+  background-color: #b6f3bf;
+}
+
+.failedInLibrary {
+  background-color: #eab8a5;
+}
+/* Clase para la nota en la pagina 3 de las opiniones
+ hace flexible el contenedor, coloca sus elementos al principio y en columnas */
+.nota {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* Clase para los comentarios en la pagina de texto html, plano solo hace flexive el contenedor */
+.Contentext {
+  display: flex;
+}
+/*crea una sangria o identacion de aproximado unos 30px en el texto  */
+.spacing {
+  text-indent: 30pt;
+}
+.divRounded {
+  border-radius: 10px;
+}
+
+.back::after {
+  color: black;
+  content: "\21B6"; /* ó    ---> 21BA*/
+  font-weight: bolder;
+  font-size: 26px;
+}
+.input_invalid {
+  background-color: #eab8a5;
+}
+
+.input_valid {
+  background-color: #b6f3bf;
+}
+/* Estilos de los board  dobles con texto  */
+.contentDoubleBaord {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  margin-top: 25px;
+}
+/* clase que se utiliza como contenedor de los board */
+.sizeBoardDouble {
+  width: 500px;
+  margin: 20px;
+  border: 1px solid black;
+  text-align: center;
+}
+/* clases para crear una linea divisora en la parte de arriba de un contenedor */
+.borderIndividual {
+  border-top: 1px solid black;
+}
+/* clases que pone flexible un contenedor */
+.contenedorGrid {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+/* clase de pruba para verificar que los items-hijos de un contenedor padre esten dentros del mismo.
+ Nota: Esta clase solo se utiliza de prueba. [Status: Testing ]*/
+.test {
+  border: 1px solid black;
+}
+/* grid por default, crea dos columnas y 3 filas con espacios de 20px para casa una de ellas */
+.contenTest {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+/* clase que se utiliza para los elementos que se requiere en negrita, como conceptos claves en alguna definicion  */
+.bold-example {
+  text-align: center;
+  font-weight: bold;
+}
+/* crea un margen arriba de 50px */
+.margen-top-50 {
+  margin-top: 50px;
+}
+/* es el ancho de los input del tablero estandarizado Nota: Puede que esta clase no se este utilizando, [Status:Por verificar] */
+.input-width-normalice {
+  width: calc(100% - (0%));
+}
+
+/* ancho del elemento th en el tablero */
+.th-table {
+  width: 120px;
+  border: black 1px solid;
+}
+/* clase de prueba. Nota: Puede que esta clase no se este utilizando, [Status:Por verificar]*/
+.input-table {
+  width: 100%;
+  border: 0;
+}
+.input-conf-Table {
+  text-align: center;
+  /* font-size: 14px; */
+  padding: 2px;
+}
+
+.border-table {
+  border: black 1px solid;
+}
+
+.input-default {
+  background-color: #f6f3c9;
+}
+
+.input-sended {
+  background-color: #f5d101;
+}
+/* MediaQuery -- Inicio del responsive de la grid de contenedores, crea una grid de 1 columna para el responsive de movil */
+@media only screen and (min-width: 360px) and (max-width: 720px) {
+  .contenTest {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+  .artefact {
+    width: 320px;
+  }
+  .table-width {
+    width: 100%;
+  }
+  .allbuttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .contentBoard_Double {
+    width: 320px;
+  }
+}
+
+@media only screen and (min-width: 720px) and (max-width: 850px) {
+  .contenTest {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+  .artefact {
+    width: 320px;
+  }
+  .table-width {
+    width: 100%;
+  }
+}
+/* Finaliza el responsive  */
+
+/* centra el contenido en un elemento */
+.item {
+  text-align: center;
+}
+/* clase para poner en negrita un titulo */
+.titulo {
+  font-weight: bolder;
+  margin: 0;
+}
+
+/*
+keyBoard
+*/
+/*clase inicial del keyboard lo alinea y lo pone no visible*/
+.popup {
+  display: none;
+  align-content: center;
+}
+/*pone el border al conteneor superior del keyboard*/
+.orange-bg {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: orange;
+  width: 100%;
+}
+/*contenedor padre del keyboard limita el ancho*/
+.divParent {
+  border-radius: 20px;
+  min-height: 140px;
+  max-width: 650px;
+  min-width: 300px;
+  width: 80%;
+  background-color: grey;
+  justify-items: center;
+}
+/*unicode del boton para abrir el keyboard*/
+.keyBoard::after {
+  color: rgb(0, 0, 0);
+  content: "⌨";
+  font-size: 30px;
+  position: relative;
+  top: -12px;
+  left: -6px;
+}
+/* clase para el efecto de los botones */
+.buttonKey {
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  box-shadow: 0 3px #999;
+}
+/*hover de los botones */
+.buttonKey:hover {
+  background-color: #899c;
+}
+/* al pulsar el boton se mueve hacia abajo 2 pixeles y cambia el fondo*/
+.buttonKey:active {
+  background-color: #797c;
+  box-shadow: 0 2px #666;
+  transform: translateY(2px);
+}
+/* estado active de los botones mantiene pulsado el boton */
+.buttonDownActive {
+  background-color: #797c;
+  box-shadow: 0 2px #666;
+  transform: translateY(2px);
+}
+/*  */
+.closed {
+  width: 30px;
+  height: 30px;
+}
+/*unicode de la X para cerrar el keyboard*/
+.closed::after {
+  color: #000000;
+  content: "\2179";
+  font-size: 24px;
+  position: relative;
+  top: -5px;
+}
+/*estilos del boton que abre el keyboard*/
+.butonKeyBoardOpen {
+  display: inline-block;
+  width: 50px;
+  height: 40px;
+  background-color: rgb(224, 198, 79);
+  border: 2px solid #e17055;
+  border-radius: 0.25rem;
+}
+/*/////// responsibe engine 0 ////////*/
+.paddiv {
+  width: 100%;
+  max-width: 900px;
+  min-width: 300px;
+}
+/*clase de estado 1 inputs engine 0 interval */
+.inpEngInt-1 {
+  min-height: 60px;
+  width: 100%;
+  min-width: 75px;
+  max-width: 200px;
+}
+/*clase de estado 2 inputs engine 0 interval */
+.inpEngInt-2 {
+  min-height: 60px;
+  min-width: 75px;
+  width: 100%;
+}
+/*clase del board lo pone 100% de anccho y sus minimos */
+.BoardEngInt {
+  width: 100%;
+  min-width: 150px;
+  max-width: 650;
+  min-height: 60px;
+}
+
+.contentArtefact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid black;
+}
+.textValInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+  border-top: 1px solid black;
+  font-style: italic;
+}
+
+@media (min-width: 768px) {
+  .hola {
+    flex: 0 0 8px;
+    max-width: 50%;
+  }
+
+  .input-width-frame {
+    width: calc(100% - (85%));
+  }
+  .small_box {
+    width: 100px;
+    align-content: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .hola {
+    flex: 0 0 8px;
+    max-width: 50%;
+  }
+
+  .input-width-frame {
+    width: calc(100% - (85%));
+    text-align: center;
+  }
+
+  .small_box {
+    width: 250px;
+    align-content: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hola {
+    flex: 0 0 8px;
+    max-width: 50%;
+    text-align: center;
+  }
+  .input-width-frame {
+    width: calc(100% - (85%));
+    text-align: center;
+  }
+
+  .small_box {
+    width: 300px;
+    align-content: center;
+  }
+}
+
+@media (min-width: 1400px) {
+  .hola {
+    flex: 0 0 8px;
+    max-width: 50%;
+    text-align: center;
+  }
+  .input-width-frame {
+    width: calc(100% - (85%));
+    text-align: center;
+  }
+
+  .small_box {
+    width: 400px;
+    align-content: center;
+  }
+}
+
+/* Tablero pequeños*/
+@media (min-width: 768px) {
+  .small_box_together {
+    flex: 0 0 2px;
+    max-width: 50%;
+  }
+
+  .input-width-frame {
+    width: calc(100% - (85%));
+  }
+  .small_box {
+    width: 100px;
+    align-content: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .small_box_together {
+    flex: 0 0 2px;
+    max-width: 50%;
+    border: 0px;
+  }
+
+  .input-width-frame {
+    width: calc(100% - (85%));
+    text-align: center;
+  }
+
+  .small_box {
+    width: 220px;
+    border: 0px;
+    align-content: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .small_box_together {
+    flex: 0 0 2px;
+    max-width: 45%;
+    text-align: center;
+  }
+  .input-width-frame {
+    width: calc(100% - (85%));
+    text-align: center;
+  }
+
+  .small_box {
+    width: 300px;
+    border: 0px;
+    align-content: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1400px) {
+  .small_box_together {
+    flex: 0 0 2px;
+    max-width: 45%;
+    text-align: center;
+  }
+  .input-width-frame {
+    width: calc(100% - (90%));
+    text-align: center;
+  }
+
+  .small_box {
+    width: 400px;
+  }
+}
+
+.centerFloat {
+  position: absolute;
+  align-self: center;
+  text-align: center;
+  margin-left: 10px;
+  border-radius: 10px;
+  margin-right: 10px;
+  top: 15%;
+}
+
+/* Aqui empiezan los nuevos estilo */
+.input-reduce {
+  width: 24px;
+  margin-left: 50px;
+}
+
+.itemContenFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.borderNone {
+  border: 0;
+  border-radius: 2px;
+}
+
+.pass:hover {
+  background-color: rgba(35, 194, 53, 0.6);
+}
+.failed:hover {
+  background-color: rgba(167, 62, 22, 0.6);
+}
+
+.sizeContenedor {
+  width: 400px;
+}
+
+.newGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.banderGrid {
+  display: flex;
+}
+
+.noBorder {
+  border: 0;
+}
+.border-dark-top {
+  width: 100%;
+  border-top: 1px solid black;
+}
+
+.sizeInput-Default {
+  width: 200px;
+  margin-left: 10px;
+}
+
+.disabledGraph {
+  background-color: #f0eaea !important;
+  cursor: not-allowed;
+}
+
+.board_with_table {
+  width: 250px;
+  height: 250px;
+}
+
+.text-subrayado {
+  background-color: #f6f3c9;
+}
+
+.text-table-font{
+  font-size: 0.6rem;
+}
+
+.input-table.conf{
+  width: 100%;
+  padding: 0px;
+
+  }
+
+
+.table-with{
+  width: 300px;
+}
+
+.th-table-adjust {
+  width: 32px !important;
+  font-size: 0.6rem !important;
+}
+
+.buttons-bar {
+  width: 260px !important;
+  height: 50px;
+}
+
+
+/* estilos Eliezer para motor enginetoWay */
+
+
+.etwAllArtifact{ 
+  /* todos los artefactos */
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1px;
+}
+
+.etwArtifact{
+  width: 400px;
+  max-width: 400px;
+  min-width: 280px;
+  min-height: 450px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #000000;
+  /* border-radius: 10px; */
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 48px 8px 8px 8px;
+  position: relative;
+}
+.etwArtifact__title{
+  text-align: center;
+}
+.etwArtifact__btnHelp-container{
+  position: absolute;
+  right: 0;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.etwArtifact__btnHelp{
+  width: 32px;
+  border: solid 1px;
+  border-radius: 0.25rem;
+  background-color: #ffffff;
+}
+
+.help-btn::after{
+  color: #9f3333;
+  font-size: 26px;
+  content: "\2691";
+}
+.help-btn:hover{
+  transform: scale(1.05);
+  background-color: #66f387;
+}
+
+.etwArtifact__help-msg{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #e2e0eb;
+  z-index: 1000;
+  transform: translateX(-100%);
+  transition: .7s transform  ;
+}
+
+.etwArtifact__help-msg-content{
+  display: flex;
+  flex-direction: column;
+}
+
+.etwArtifact__help-msg-btnClose{
+width: 32px;
+height: 32px;
+border: none;
+border-radius: 0.25rem;
+background-color: #ffffff ;
+position: absolute;
+right: 0;
+margin: 10px;
+}
+
+.btnCloseMsg::after{
+  content: "\00AB";
+}
+
+.btnCloseMsg:hover{
+  background-color: #006ebb;
+}
+
+.etwArtifact__help-msg-textHelp{
+  margin-top: 50px;
+  padding: 8px;
+  font-weight: 700;
+}
+
+.etwArtifact__Board{
+  margin-bottom: 4px;
+  height: 450px;
+  min-height: 240px;
+}
+
+.etwArtifact__elements{
+  display: flex;
+  justify-content: center;
+}
+
+.etwArtifact__btnContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  border: 1px solid #000000;
+}
+
+.input-for-way{
+    
+    min-width: 40px;
+    max-width: 100px;
+    padding: 1px 4px;
+    background-color: #fefefe;
+    border:1px solid #bbbf;
+    border-radius: .2em;
+    font-size: 18px;
+    
+}
+
+.input-for-way--default{
+  background-color: #efefef;
+  padding: 1px 11px;
+}
+
+.input-for-way:hover{
+    border: .5px solid #3e84ed;
+}
+
+.input-for-way:focus{
+  border: .5px solid #3e84ed;
+  outline: none;
+}
+
+
+.titleWayName{
+  font-size: 17px;
+  font-weight: 700;
+  
+}
+
+.fieldNameInput{
+  width: 50%;
+  font-size: 22px;
+
+  border: 1.5px solid #222222;
+  border-radius: .2em;
+
+  margin-left: .5em;
+  margin-bottom: 4px;
+
+  padding-left: 1px;
+}
+.fieldNameInput:hover{
+  border-color:  #3e84ed;
+}
+
+.fieldNameInput:focus{
+  border-color:  #3e84ed;
+  padding-left: 5px;
+  outline: none;
+}
+
+@media screen and (max-width: 400px) {
+  
+
+  .etwArtifact{
+    width: 300px;
+    height: 200px;
+    max-height: 200px;
+    margin: 20px 4px;
+  }
+  .etwArtifact__elements{
+    font-size: 16px;
+  }
+  .etwArtifact__Board{
+    min-height: 200px;
+  }
+  .titleWayName{
+    font-size: 14px;
+  }
+  .fieldNameInput{
+    height: 35px;
+  }
+}
+

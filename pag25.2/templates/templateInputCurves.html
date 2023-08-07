@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <script type="text/javascript" src="librery/jsxgraph.js"></script>
+
+    <link rel="stylesheet" href="librery/style.css">
+    <link rel="stylesheet" href="librery/styleInputCurves.css">
+
+</head>
+<body>
+    
+
+<div class="inputCurvesAllArtifact">
+    <div class="element-inputCurves" data-board="board_0"></div>
+    <div class="element-inputCurves" data-board="board_0"></div>
+</div>
+
+<template id="tmp-inputCurves">
+    <div class="inputArtifact" >
+        <div class="inputArtifact__content">
+         <div class="msg d-none ">
+            
+         </div>
+         <div class="inputArtifact__inputs">
+              <!-- inputs -->
+           </div>
+           <div class="inputArtifact__board">
+            <!-- board -->
+           </div>
+        </div>
+        <div class="inputArtifact__btn btn-all">
+            <button class="help-btn  buttonSecundary buttonKey d-none "></button>
+            <button class="inputArtifact__btnReset  buttonSecundary buttonKey">Reset </button> 
+            <button class="inputArtifact__btnCreateCurve buttonKey" >Crear curva </button>
+        </div>
+     </div>
+</template>
+
+<template id = "tmp-coords">
+   <div class="inputArtifact__coord">
+      <span>(</span> <span class = 'defaultCoordX'>x</span> <span>,</span> <math-field class="inputArtifact__inputCoord" virtual-keyboard-mode='onfocus' keypress-sound = "none"></math-field><span>)</span>
+   </div>
+</template>
+
+<script src="/librery/mathmin.js"></script>
+<script src="engines/mathKeyboard.js"></script>
+<script src="engines/mod_G.js"></script>
+<script src="engines/inputsCurves.js"></script> 
+<script src="definitions/definition.js"></script>
+
+</body>
+</html>
